@@ -59,7 +59,10 @@
 .profile{
     height:2vw;
 }
-/*  ------------------------About---------------------------------------- */
+.page4{
+    background-color: rgba(119, 136, 153, 0.055);
+}
+/*  ------------------------Contact---------------------------------------- */
 .contact{
     padding-top:12vw;
     font-size: 3vw;
@@ -69,7 +72,7 @@
     letter-spacing: 0.4vw;
     position: relative;
 }
-/* -------------------------About underline----------------------------------- */
+/* -------------------------Contact underline----------------------------------- */
 .contact::after,.skill::after{
     content: "";
     position: absolute;

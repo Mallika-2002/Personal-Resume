@@ -136,7 +136,7 @@ form{
 }
 /* ------------------------Name email------------------------------------------- */
 form #name,#mail,#subject{
-    width:150%;
+    width:120%;
     margin-bottom: 1vw;
     text-align: center;
     height: 3vw;
@@ -144,7 +144,7 @@ form #name,#mail,#subject{
 }
 /* ------------------------------form message------------------------------------- */
 form #msg{
-    width:150%;
+    width:120%;
     font-size:1vw;
 }
 /* -----------------------------------------------form submit button------------------------- */

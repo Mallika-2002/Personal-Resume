@@ -85,8 +85,10 @@
 /*  ------------------------------For flex details with inputs------------------------- */
 .container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+   padding: 2vw;
     flex-wrap: wrap;
+    margin: 0 0;
     /* align-items: center; */
 }
 /* -------------------------location email call--------------------------------- */
@@ -97,6 +99,7 @@ padding-top: 1vw;
 }
 /*----------------------------------------Animation in detail--------------------- */
 .detail{
+    padding:2vw;
     animation:moveRight 1s linear ;
 }
 @keyframes moveRight {
@@ -119,7 +122,8 @@ padding-top: 1vw;
 }
 /* --------------------------------------input form----------------------------------- */
 form{
-    padding: 2vw;
+    padding:2vw;
+    /* padding: 2vw; */
     animation: moveLeft 1s linear;
 }
 @keyframes moveLeft {
@@ -132,11 +136,11 @@ form{
 }
 /* ------------------------Name email------------------------------------------- */
 form #name,#mail,#subject{
-    width:100%;margin-bottom: 1vw;
+    width:100%;
+    margin-bottom: 1vw;
     text-align: center;
     height: 3vw;
 }
-
 /* ------------------------------form message------------------------------------- */
 form #msg{
     width:100%;

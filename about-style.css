@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
+*{
+     font-family: "Raleway", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* --------------------------Header-------------------------------------- */
+.fixed-top{
+    background-color: #e9e8e6;
+    box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+    width:100vw;
+    position: fixed;
+    z-index: 2;
+}
+/* --------------Name : Mallika----------------------------- */
+.logo-me{
+    color:#222222;
+    font-weight: 400;
+    font-size: 2vw;
+    /* font-weight: 700; */
+    /* text-transform: capitalize; */
+    letter-spacing: 7px;
+}
+#navbar ul{
+    list-style: none;
+    display: flex; 
+  gap: 4vw;
+}
+/* ---------------Giving styling to navigation links ---------------------------*/
+#navbar a{  color:black;
+    text-decoration: none;
+    font-size: 1vw;
+    position: relative;
+    padding:0.5vw
+}
+/* --------------Hover Animation in Navigation links--------------------------------- */
+#navbar a::before{
+    content: "";
+     width: 0;
+     height: 2px;
+        background-color: #df4c73; /* Adjust the line color as needed */
+         position: absolute;
+         bottom: 0;
+     left: 0;
+         transition: width 0.3s ease-in-out;
+}
+#navbar a:hover::before {
+    width: 100%;}
+        /*---------------------------------Linked In - Github - GFG------------------------------ */
+.header-social-links{
+    display: flex;
+    gap:1vw;
+}
+.profile{
+    height:2vw;
+}
+/*  ------------------------About---------------------------------------- */
+.about{
+    padding-top:13vw;
+    font-size: 3vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.4vw;
+    position: relative;
+}
+/* -------------------------About underline----------------------------------- */
+.about::after,.skill::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8%;
+    height: 0.1vw;
+    /* background: #df4c73; */
+    background: #34b7a7;
+    bottom: 0;
+    left:46%;
+    /* left: calc(50% - 25%); */
+}
+/* ----------------------Professional Summary-------------------------- */
+.about-me{
+    letter-spacing: 0.2vw;
+    word-spacing: 0.3vw;
+    padding:3vw;
+    font-size: 1.25vw;
+    line-height: 2vw;
+    text-align: center;
+}
+/* ------------------------Education------------------------------------- */
+.educate{
+    padding-top: 3vw;
+    font-size: 3vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    /* color:#222222; */
+    position: relative;
+    letter-spacing: 0.4vw;
+}
+/* --------------------------------Underline Education---------------------------- */
+.educate::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 12%;
+    height: 0.2vw;
+    /* background: #df4c73; */
+    background: #34b7a7;
+    bottom: 0;
+    left:44%;
+}
+/* -----------------------to align cards in flex --------------------------------- */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 2vw;
+}
+/* -------------------------------Education  Details Cards-------------------------- */
+.card {
+    width: 400px;
+    height:12vw;
+    /* border: 1px solid #222222; */
+    border-radius: 5px;
+    box-shadow: 2px 3px 6px #df4c73;
+    margin:1vw;
+    /* padding: 1vw; */
+}
+/* -----------------------Content of Education details------------------------- */
+.card-content{
+    padding:1vw;
+text-align: center;
+font-size: 1.2vw;letter-spacing: 0.2vw;}
+/* -------------------------------Skills------------------------------------------------ */
+.skill{
+    padding-top: 7vw;
+    font-size: 3vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    /* color:#222222; */
+    position: relative;
+    letter-spacing: 0.4vw;
+}
+/* --------------------------Text below skills---------------------------- */
+.skill-text{
+    text-align: center;
+    padding:1vw;
+    font-size: 2vw;
+    font-weight: 700;
+    /* letter-spacing: 0.2vw; */
+}
+
+/* -----------------------Grid images--------------------------------------- */
+.tech{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+    gap: 10px; 
+    justify-content: center;
+    align-items: center;
+    
+}
+/* Style the grid items */
+.grid-item img {
+    padding: 1vw;
+    height: 10vw; /* Maintain image aspect ratio */
+    display: block; 
+    /* Remove any extra spacing below images */
+    margin: auto;
+}
+
+/* -------------------------About and Education and skills in Page 2 ------------------------------------*/
+.pag2{
+    color:#444444;
+    animation: slideUp 2s linear;
+  /* height: 100vh; */
+  background-color: rgba(119, 136, 153, 0.055);
+}
+
+/* Define the animation */
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%); /* Start from the bottom */
+    }
+    100% {
+        transform: translateY(0); /* Move to the top */
+    }
+}
+

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
+*{
+     font-family: "Raleway", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* --------------------------Header-------------------------------------- */
+.fixed-top{
+    background-color: #e9e8e6;
+    box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+    width:100vw;
+    position: fixed;
+    z-index: 2;
+}
+/* --------------Name : Mallika----------------------------- */
+.logo-me{
+    color:#222222;
+    font-weight: 400;
+    font-size: 2vw;
+    /* font-weight: 700; */
+    /* text-transform: capitalize; */
+    letter-spacing: 7px;
+}
+#navbar ul{
+    list-style: none;
+    display: flex; 
+  gap: 4vw;
+}
+/* ---------------Giving styling to navigation links ---------------------------*/
+#navbar a{  color:black;
+    text-decoration: none;
+    font-size: 1vw;
+    position: relative;
+    padding:0.5vw
+}
+/* --------------Hover Animation in Navigation links--------------------------------- */
+#navbar a::before{
+    content: "";
+     width: 0;
+     height: 2px;
+        background-color: #df4c73; /* Adjust the line color as needed */
+         position: absolute;
+         bottom: 0;
+     left: 0;
+         transition: width 0.3s ease-in-out;
+}
+#navbar a:hover::before {
+    width: 100%;}
+        /*---------------------------------Linked In - Github - GFG------------------------------ */
+.header-social-links{
+    display: flex;
+    gap:1vw;
+}
+.profile{
+    height:2vw;
+}
+/*  ------------------------About---------------------------------------- */
+.contact{
+    padding-top:12vw;
+    font-size: 3vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.4vw;
+    position: relative;
+}
+/* -------------------------About underline----------------------------------- */
+.contact::after,.skill::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8%;
+    height: 0.1vw;
+    /* background: #df4c73; */
+    background: #34b7a7;
+    bottom: 0;
+    left:46%;
+    /* left: calc(50% - 25%); */
+}
+/*  ------------------------------For flex details with inputs------------------------- */
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+/* -------------------------location email call--------------------------------- */
+.lce{
+    font-size: 2.5vw;
+font-weight: 700;
+padding-top: 1vw;
+}
+/*----------------------------------------Animation in detail--------------------- */
+.detail{
+    animation:moveRight 1s linear ;
+}
+@keyframes moveRight {
+    0% {
+        transform: translateX(-100%); /* Start at the leftmost position */
+    }
+    100% {
+        transform: translateX(0); /* Move to the right by 200px */
+    }
+}
+/* -------------------------Logos location email call--------------------------------- */
+.detail img{
+    height: 2.5vw;
+    border-radius: 50%;
+}
+/* -------------------------location email call details--------------------------------- */
+.ans{
+    margin-left: 2.5vw;
+    font-size: 1.5vw;
+}
+/* --------------------------------------input form----------------------------------- */
+form{
+    padding: 2vw;
+    animation: moveLeft 1s linear;
+}
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100%); /* Start at the leftmost position */
+    }
+    100% {
+        transform: translateX(0); /* Move to the right by 200px */
+    }
+}
+/* ------------------------Name email------------------------------------------- */
+form #name,#mail,#subject{
+    width:100%;margin-bottom: 1vw;
+    text-align: center;
+    height: 3vw;
+}
+
+/* ------------------------------form message------------------------------------- */
+form #msg{
+    width:100%;
+}
+/* -----------------------------------------------form submit button------------------------- */
+form #submit{
+    background-color: #34b7a7;
+    border-radius: 20px;
+text-decoration: none;
+color:white;
+display: block;
+margin: auto;
+font-size:1.5vw;
+padding: 1vw;
+border: none;
+}
+form #submit:hover{
+    cursor: pointer;
+}

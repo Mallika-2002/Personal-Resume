@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i');
+*{
+     font-family: "Raleway", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* --------------------------Header-------------------------------------- */
+.fixed-top{
+    background-color: #e9e8e6;
+    box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+    width:100vw;
+    position: fixed;
+    z-index: 2;
+}
+/* --------------Name : Mallika----------------------------- */
+.logo-me{
+    color:#222222;
+    font-weight: 400;
+    font-size: 2vw;
+    /* font-weight: 700; */
+    /* text-transform: capitalize; */
+    letter-spacing: 7px;
+}
+#navbar ul{
+    list-style: none;
+    display: flex; 
+  gap: 4vw;
+}
+/* ---------------Giving styling to navigation links ---------------------------*/
+#navbar a{  color:black;
+    text-decoration: none;
+    font-size: 1vw;
+    position: relative;
+    padding:0.5vw
+}
+/* --------------Hover Animation in Navigation links--------------------------------- */
+#navbar a::before{
+    content: "";
+     width: 0;
+     height: 2px;
+        background-color: #df4c73; /* Adjust the line color as needed */
+         position: absolute;
+         bottom: 0;
+     left: 0;
+         transition: width 0.3s ease-in-out;
+}
+#navbar a:hover::before {
+    width: 100%;}
+        /*---------------------------------Linked In - Github - GFG------------------------------ */
+.header-social-links{
+    display: flex;
+    gap:1vw;
+}
+.profile{
+    height:2vw;
+}
+/* ---------------------------Entire page-------------------------- */
+.page3{
+    background-color: rgba(119, 136, 153, 0.058);
+    color:#333333;
+}
+/* ---------------Projects heading----------------------- */
+.projects{
+    padding-top:12vw;
+    font-size: 3vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.4vw;
+    position: relative;
+}
+/* -------------------------------underline projects------------------------- */
+.projects::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 8%;
+    height: 0.1vw;
+    /* background: #df4c73; */
+    background: #34b7a7;
+    bottom: 0;
+    left:46%;
+}
+.project{
+    padding: 2vw;
+    animation: fadeInOut 3s ease-in ; 
+}
+/* ---------------------Define animation------------------- */
+@keyframes fadeInOut {
+    0%{
+        opacity: 0;; /* Start from the bottom */
+    }
+    75% {
+       opacity: 1; /* Move to the top */
+    }
+}
+/* ------------------------title of project----------------------------------- */
+.title{
+    font-weight: 700;
+    font-size: 2vw;
+    color:#df4c73;
+    margin: 0.5vw;
+    text-align: center;
+
+}
+/* -------------------------headings in project desxription-------------------------------- */
+.heading{
+    font-weight: 700;
+    font-size: 1.5vw;
+    /* color:#333333; */
+    color: #df4c73;
+    /* margin: 0.5vw;s */
+}
+/* ----------------------------link for project visit------------------------------- */
+.project a{
+    text-decoration: none;
+    font-size: 1vw;
+    background-color: #34b7a7;
+    color:#222222;
+    padding: 0.5vw;
+    border-radius: 10px;
+}
+/* ------------------------------------Content for project description------------------------- */
+.project-content{
+   box-shadow:  0px 0 10px 0 #df4c736e;
+    border-radius: 10px;
+    /* border:2px solid beige; */
+    /* text-align: center; */
+    font-size: 1.25vw;
+    padding: 2vw;
+    margin: 0 2vw;
+}

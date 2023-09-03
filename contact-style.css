@@ -136,14 +136,16 @@ form{
 }
 /* ------------------------Name email------------------------------------------- */
 form #name,#mail,#subject{
-    width:100%;
+    width:150%;
     margin-bottom: 1vw;
     text-align: center;
     height: 3vw;
+    font-size:1vw;
 }
 /* ------------------------------form message------------------------------------- */
 form #msg{
-    width:100%;
+    width:150%;
+    font-size:1vw;
 }
 /* -----------------------------------------------form submit button------------------------- */
 form #submit{
@@ -152,7 +154,7 @@ form #submit{
 text-decoration: none;
 color:white;
 display: block;
-margin: auto;
+margin:1vw auto;
 font-size:1.5vw;
 padding: 1vw;
 border: none;

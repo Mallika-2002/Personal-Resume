@@ -118,23 +118,21 @@
 .cards{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 2vw;
+    justify-content: center;
 }
 /* -------------------------------Education  Details Cards-------------------------- */
 .card {
-    width: 30%;
-    height:12vw;
-    /* border: 1px solid #222222; */
+    width:450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
     border-radius: 5px;
     box-shadow: 2px 3px 6px #df4c73;
-    margin:1vw;
-    /* padding: 1vw; */
+    margin: 1.5vw;
 }
 /* -----------------------Content of Education details------------------------- */
 .card-content{
-    padding:1vw;
+    padding:1.5vw;
 text-align: center;
 font-size: 1.2vw;letter-spacing: 0.2vw;}
 /* -------------------------------Skills------------------------------------------------ */
@@ -179,7 +177,7 @@ font-size: 1.2vw;letter-spacing: 0.2vw;}
 .pag2{
     color:#444444;
     animation: slideUp 2s linear;
-  /* height: 100vh; */
+  height: 100%;
   background-color: rgba(119, 136, 153, 0.055);
 }
 
